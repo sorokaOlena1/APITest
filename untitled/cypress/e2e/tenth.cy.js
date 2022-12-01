@@ -7,7 +7,7 @@ describe('eighth Task', () => {
         cy.request({
             method: 'POST',
             url: 'posts',
-            body: post,
+            body: body,
         }).then(response => {
             expect(response.status).to.be.eq(201);
             postId = response.body.id;
